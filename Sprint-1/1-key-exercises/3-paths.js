@@ -29,4 +29,4 @@ console.log(`The ext part of ${filePath} is ${ext}`);
 
 
 
-// https://www.google.com/search?q=slice+mdn
+// https://www.google.com/search?q=slice+mdn. 
