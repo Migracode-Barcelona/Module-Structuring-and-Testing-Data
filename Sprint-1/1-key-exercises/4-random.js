@@ -11,8 +11,8 @@ console.log(num);
 // ANSWER: 
 // - Math.floor is rounding down the number to the nearest whole number
 // - Math.random() is generating a random decimal number between 0 and 1
-// - (maxium-minimun + 1) is calculating the possibilite range of numbers that we want
-// - minimun set the number to start at the minimum value (1). This way, the final result will be between 1 and 100.
+// - (maximum-minimum + 1) is calculating the possibilities range of numbers that we want
+// - minimum set the number to start at the minimum value (1). This way, the final result will be between 1 and 100.
 // - num is a whole number aleatory between 1 and 100
 
 

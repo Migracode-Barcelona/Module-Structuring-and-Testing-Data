@@ -3,8 +3,8 @@
 
 //Answer: Is invalid because variable names cannot start with a number.  So it will give a SyntaxError.
 
-const twuelveHourClockTime = "20:53";
+const twelveHourClockTime = "20:53";
 const twentyFourHourClockTime = "08:53";
 
-console.log(twuelveHourClockTime);
-console.log(twentyFourHourClockTime);   
+console.log(twelveHourClockTime);
+console.log(twentyFourHourClockTime);

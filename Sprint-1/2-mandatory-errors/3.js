@@ -9,7 +9,7 @@
 // Then try updating the expression last4Digits is assigned to, in order to get the correct value
 
 
-//Prediction: CardNumber is a number not a string, and the slice method is not defined for numbers.  So it will give a TrypeError. 
+//Prediction: CardNumber is a number not a string, and the slice method is not defined for numbers.  So it will give a TypeError. 
 
 const cardNumber = 4533787178994213;
 const last4Digits = cardNumber.toString().slice(-4);
