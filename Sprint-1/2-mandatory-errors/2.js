@@ -3,3 +3,5 @@
 
 console.log(`I was born in ${cityOfBirth}`);
 const cityOfBirth = "Bolton";
+
+//this will give an error as the console is first called before the variable. the proper way is for the variable to be declared first before logging as the system starts to execute from the top line. 
