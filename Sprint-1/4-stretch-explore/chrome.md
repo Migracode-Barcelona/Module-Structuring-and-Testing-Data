@@ -16,3 +16,12 @@ Now try invoking the function `prompt` with a string input of `"What is your nam
 
 What effect does calling the `prompt` function have?
 What is the return value of `prompt`?
+
+Answer:
+Calling alert("Hello world!") shows a popup with the message "Hello world!" to the user.
+The alert function does not return any value (returns undefined).
+Calling prompt("What is your name?") shows a popup with a text input field asking the user for their name.
+The return value of prompt is the text entered by the user, or null if the user presses Cancel.
+Example:
+const myName = prompt("What is your name?");
+console.log(myName); // will display the name entered or null

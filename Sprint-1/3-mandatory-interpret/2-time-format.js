@@ -23,3 +23,18 @@ console.log(result);
 // e) What do you think the variable result represents? Can you think of a better name for this variable?
 
 // f) Try experimenting with different values of movieLength. Will this code work for all values of movieLength? Explain your answer
+
+//Answer:
+// a) Variable declarations:
+// movieLength, remainingSeconds, totalMinutes, remainingMinutes, totalHours, result (6 in total)
+
+// b) Function calls:
+// console.log(result) (1 function call)
+
+// c) movieLength % 60 gives the remainder when movieLength is divided by 60, representing the remaining seconds after full minutes are counted
+
+// d) totalMinutes = (movieLength - remainingSeconds) / 60 calculates the total number of full minutes by removing leftover seconds and dividing by 60
+
+// e) result represents the movie duration in hours:minutes:seconds format. A better name could be formattedMovieLength or movieTimeString
+
+// f) The code works for any positive number of seconds, but single-digit minutes or seconds will not have leading zeros. To fix this, use padStart to format as hh:mm:ss
