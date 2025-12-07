@@ -12,4 +12,4 @@ console.log(`Our random number is ${random_number} and if we multiply it by ${ma
 // It will help to think about the order in which expressions are evaluated
 // Try logging the value of num and running the program several times to build an idea of what the program is doing
 
-num represents a random integer between 1 and 100, created by combining Math.random() to generate randomness, Math.floor() to remove decimals, and then adjusting the number into the desired range.
+//num represents a random integer between 1 and 100, created by combining Math.random() to generate randomness, Math.floor() to remove decimals, and then adjusting the number into the desired range.
