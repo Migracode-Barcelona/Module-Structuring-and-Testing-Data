@@ -1,0 +1,10 @@
+{
+  "name": "ordinal-testing-example",
+  "description": "An example application showing how to write tests using the jest framework",
+  "devDependencies": {
+    "jest": "^30.2.0"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
