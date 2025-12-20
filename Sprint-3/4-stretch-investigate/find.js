@@ -2,11 +2,24 @@ function find(str, char) {
   let index = 0;
 
   while (index < str.length) {
+    // a) How the index variable updates during the call to find:
+    // The index variable starts at 0 and increases by 1 on each iteration of the loop.
+    // This allows checking each character of the string in order.
+
     if (str[index] === char) {
+      // b) What is the if statement used to check:
+      // It checks whether the current character in the string matches the searched character (char).
       return index;
     }
+
     index++;
+    // c) Why is index++ being used?
+    // index++ increments the index by 1 so that the loop can move to the next character in the string.
   }
+
+  // d) What is the condition index < str.length used for?
+  // This condition ensures that the loop does not go beyond the string length.
+  // When index equals the string length, the loop stops.
   return -1;
 }
 

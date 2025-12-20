@@ -1,26 +1,32 @@
-/* 
-Password Validation
+const passwordValidator = require("./password-validator");
 
-Write a program that should check if a password is valid
-and returns a boolean
-
-To be valid, a password must:
-- Have at least 5 characters.
-- Have at least one English uppercase letter (A-Z)
-- Have at least one English lowercase letter (a-z)
-- Have at least one number (0-9)
-- Have at least one of the following non-alphanumeric symbols: ("!", "#", "$", "%", ".", "*", "&")
-- Must not be any previous password in the passwords array. 
-
-You must breakdown this problem in order to solve it. Find one test case first and get that working
-*/
-const isValidPassword = require("./password-validator");
+// Test: minimum length
 test("password has at least 5 characters", () => {
-    // Arrange
-    const password = "12345";
-    // Act
-    const result = isValidPassword(password);
-    // Assert
-    expect(result).toEqual(true);
-}
-);
+  expect(passwordValidator("12345")).toBe(false); // no letters, no special char
+  expect(passwordValidator("Ab1!2")).toBe(true);
+  expect(passwordValidator("Ab1!")).toBe(false);
+});
+
+// Test: at least one uppercase letter
+test("password has at least one uppercase letter", () => {
+  expect(passwordValidator("abcdef1!")).toBe(false);
+  expect(passwordValidator("Abcdef1!")).toBe(true);
+});
+
+// Test: at least one lowercase letter
+test("password has at least one lowercase letter", () => {
+  expect(passwordValidator("ABCDEF1!")).toBe(false);
+  expect(passwordValidator("ABCDEf1!")).toBe(true);
+});
+
+// Test: at least one number
+test("password has at least one number", () => {
+  expect(passwordValidator("Abcdef!")).toBe(false);
+  expect(passwordValidator("Abcde1!")).toBe(true);
+});
+
+// Test: at least one special character
+test("password has at least one special character (!, #, $, %, ., *, &)", () => {
+  expect(passwordValidator("Abcde12")).toBe(false);
+  expect(passwordValidator("Abcde1!")).toBe(true);
+});
