@@ -1,4 +1,4 @@
-const penceString = "399p";
+/*const penceString = "399p";
 
 const penceStringWithoutTrailingP = penceString.substring(
   0,
@@ -25,3 +25,20 @@ console.log(`£${pounds}.${pence}`);
 
 // To begin, we can start with
 // 1. const penceString = "399p": initialises a string variable with the value "399p"
+/* 2. const penceStringWithoutTrailingP = penceString.substring(0, penceString.length - 1);
+Use .substring(start, end) to remove the last character (p) from the string.
+penceString.length - 1  index of the last character excluding p
+3. const paddedPenceNumberString = penceStringWithoutTrailingP.padStart(3, "0");
+Use .padStart(targetLength, "0") to ensure the chain has at least 3
+4. `const pounds = paddedPenceNumberString.substring(0, paddedPenceNumberString.length - 2);`
+
+`Extracts the digits from the pounds.` `paddedPenceNumberString.length - 2` → leaves the last two digits for the pence.`
+5. const pence = paddedPenceNumberString.substring(paddedPenceNumberString.length - 2).padEnd(2, "0");
+
+.substring(start)  takes the last two characters, which represent the penny
+
+.padEnd(2, "0")  ensures there are always two digits, padding with 0 if necessary
+6. console.log(£${pounds}.${pence});
+
+Builds a string in the standard price format: £pounds.pence
+
