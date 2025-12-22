@@ -14,6 +14,8 @@
 // Then when we call this function with the weight and height
 // It should return their Body Mass Index to 1 decimal place
 
-function calculateBMI(weight, height) {
-    // return the BMI of someone based off their weight and height
+
+/function calculateBMI(weight, height) {
+    const bmi = weight / (height * height); // calcular el BMI
+    return bmi.toFixed(1); // redondear a 1 decimal y devolverlo como string
 }
