@@ -1,8 +1,16 @@
-const getAngleType = require("./1-get-angle-type");
+/*const getAngleType = require("./1-get-angle-type");
 
 test("should identify right angle (90°)", () => {
   expect(getAngleType(90)).toEqual("Right angle");
-});
+});*/
+
+
+function getAngleType(angle) {
+  if (angle === 90) return "Right angle";
+  if (angle < 90) return "Acute angle";
+  if (angle > 90 && angle < 180) return "Obtuse angle";
+  if (angle === 180) return "Straight angle";
+  if (angle > 180 && angle < 360) return "Reflex angle";
 
 // REPLACE the comments with the tests
 // make your test descriptions as clear and readable as possible
