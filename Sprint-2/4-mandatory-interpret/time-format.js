@@ -26,7 +26,7 @@ pad(remainingSeconds)
 // Call formatTimeDisplay with an input of 61, now answer the following:
 0
 seconds = 61
-remainingSeconds = 61 % 60 = 1
+remainingSeconds = 61 % 60 = 0
 totalMinutes = (61 - 1)/60 = 60/60 = 1
 remainingMinutes = 1 % 60 = 1
 totalHours = (1 - 1)/60 = 0/60 = 0
