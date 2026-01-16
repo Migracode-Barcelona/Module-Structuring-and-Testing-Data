@@ -1,6 +1,6 @@
 # Coursework
 
-verification-fork
+verification-fork : my changes
 
 > https://programming.codeyourfuture.io/structuring-data/
 
