@@ -14,13 +14,65 @@ To be valid, a password must:
 
 You must breakdown this problem in order to solve it. Find one test case first and get that working
 */
+
 const isValidPassword = require("./password-validator");
 test("password has at least 5 characters", () => {
-    // Arrange
     const password = "12345";
-    // Act
     const result = isValidPassword(password);
-    // Assert
     expect(result).toEqual(true);
 }
 );
+
+test("password has at least one uppercase letter", () => {
+    const password = "abcD1!";
+    const result = isValidPassword(password);
+    expect(result).toEqual(true);
+}
+);
+
+test("password has at least one lowercase letter", () => {
+    const password = "ABCd1!";
+    const result = isValidPassword(password);
+    expect(result).toEqual(true);
+}
+);
+
+test("password has at least one number", () => {
+    const password = "Abcde!2";
+    const result = isValidPassword(password);
+    expect(result).toEqual(true);
+}
+);
+
+test("password has at least one non-alphanumeric symbol", () => {
+    const password = "Abcde1";
+    const result = isValidPassword(password);
+    expect(result).toEqual(true);      
+}
+);
+
+test("password is not in the previous passwords array", () => {
+    const password = "Password1!";
+    const previousPasswords = ["Password1!", "Password2@", "Password3#"];
+    const result = isValidPassword(password, previousPasswords);
+    expect(result).toEqual(true);      
+}
+);
+
+test("valid password meets all criteria", () => {
+    const password = "Valid1!";
+    const previousPasswords = ["Password1!", "Password2@", "Password3#"];
+    const result = isValidPassword(password, previousPasswords);
+    expect(result).toEqual(true);      
+}
+);  
+test("invalid password fails multiple criteria", () => {
+    const password = "inv";
+    const previousPasswords = ["inv", "Password2@", "Password3#"];
+    const result = isValidPassword(password, previousPasswords);            
+    expect(result).toEqual(false);      
+}
+);  
+
+
+

@@ -30,6 +30,7 @@ These are the requirements your project needs to fulfill:
 - Make a JavaScript file with a name that describes its contents.
 - Create a function with a descriptive name which makes it clear what the function does. The function should take one argument, the credit card number to validate.
 - Write at least 2 comments that explain to others what a line of code is meant to do.
-- Return a boolean from the function to indicate whether the credit card number is valid.
+- Return a boolean from the function to indicate whether the credit card number is valid;
 
-Good luck!
+
+

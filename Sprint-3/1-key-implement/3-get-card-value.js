@@ -49,3 +49,5 @@ const fiveofHearts = getCardValue("5♥");
 // Given a card with an invalid rank (neither a number nor a recognized face card),
 // When the function is called with such a card,
 // Then it should throw an error indicating "Invalid card rank."
+
+

@@ -11,7 +11,7 @@ function formatTimeDisplay(seconds) {
   return `${pad(totalHours)}:${pad(remainingMinutes)}:${pad(remainingSeconds)}`;
 }
 
-// You will need to play computer with this example - use the Python Visualiser https://pythontutor.com/visualize.html#mode=edit
+// You will need to play computer with this example - use the Python Visualizer https://pythontutor.com/visualize.html#mode=edit
 // to help you answer these questions
 
 // Questions
