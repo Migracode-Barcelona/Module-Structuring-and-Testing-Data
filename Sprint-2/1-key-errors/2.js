@@ -1,20 +1,14 @@
+// Predict and explain first...
 
-// Predict and explain first BEFORE you run any code...
+// =============> write your prediction here
 
-// this function should square any number but instead we're going to get an error
-
-// =============> write your prediction of the error here
-
-function square(3) {
-    return num * num;
+function multiply(a, b) {
+  console.log(a * b);
 }
 
-// =============> write the error message here
+console.log(`The result of multiplying 10 and 32 is ${multiply(10, 32)}`);
 
-// =============> explain this error message here
+// =============> write your explanation here
 
 // Finally, correct the code to fix the problem
-
-// =============> write your new code here
-
-
+//  =============> write your new code here
