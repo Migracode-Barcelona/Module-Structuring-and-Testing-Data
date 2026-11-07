@@ -17,9 +17,8 @@ console.log(`The base part of ${filePath} is ${base}`);
 // Create a variable to store the dir part of the filePath variable
 // Create a variable to store the ext part of the variable
 
-const firstDirIndex = filePath.indexOf("cyf");
 const lastDirIndex = filePath.lastIndexOf("interpret");
-const dir = filePath.slice(firstDirIndex, lastDirIndex);
+const dir = filePath.slice(1, lastDirIndex);
 console.log(`The directory part of ${filePath} is ${dir}`);
 
 const firstExtIndex = filePath.indexOf(".");
