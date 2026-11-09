@@ -23,3 +23,11 @@ console.log(result);
 // e) What do you think the variable result represents? Can you think of a better name for this variable?
 
 // f) Try experimenting with different values of movieLength. Will this code work for all values of movieLength? Explain your answer
+
+//Answer
+// a) Total of 6
+// b) None
+// c) The % gives the reminder of movieLength after division by 60.
+// d) It means after the remainingSeconds that don't form a minute have been gotten, it is subtracted from the movieLength and the answer is divided by 60 to get the totalMinutes the movie shows for.
+// e) It represents after conversion the total hours, after that remainder that complete minutes that don't form hours and after that remains the seconds that don't form both hours and minutes to a total time string. A better name will be totalMovieLength.
+// f) it works with changes in movieLength but only if it stays a non-negative whole numbers in seconds which gives wrong time formats.

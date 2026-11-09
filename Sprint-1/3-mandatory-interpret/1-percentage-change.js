@@ -20,3 +20,10 @@ console.log(`The percentage change is ${percentageChange}`);
 // d) Identify all the lines that are variable declarations
 
 // e) Describe what the expression Number(carPrice.replaceAll(",","")) is doing - what is the purpose of this expression?
+
+//Answer
+// a) Total of 2 functions but called 4 times in total, on line 4 = Number() and replaceAll() and line 5 = Number() and replaceAll().
+// b) The error is on line 5 and its occurring because in the replaceAll function call there is no comma between the two "". To fix it is by adding the comma.
+// c) Line 4 and 5
+// d) Line 1, 2, 7 and 8
+// e) The expression describes that anywhere in the value of carPrice that there is comma it will be removed without replacement and then the value which is a string will be converted into a number.
