@@ -14,3 +14,9 @@ Answer the following questions:
 
 What does `console` store?
 What does the syntax `console.log` or `console.assert` mean? In particular, what does the `.` mean?
+
+
+//  ANSWER
+console.log returned ƒ log() { [native code] }, which is the function itself. Without (), it isn’t called, so nothing is logged.
+console returned an expandable object listing many properties (log, error, warn, assert, table, and others).
+typeof console returned "object".
