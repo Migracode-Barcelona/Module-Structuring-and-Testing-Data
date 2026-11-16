@@ -1,6 +1,7 @@
 // Predict and explain first...
 
 // =============> write your prediction here
+  // It will not print the output as it doe not have the return statement. 
 
 function multiply(a, b) {
   console.log(a * b);
