@@ -23,3 +23,5 @@
   }
 
 console.log(capitalise("palangga"));
+
+// also learned, albeit late, that the identifier has also been declared which threw a syntax error. 
