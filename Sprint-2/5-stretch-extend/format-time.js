@@ -22,4 +22,3 @@ const targetOutput2 = "11:00 pm";
 console.assert(
   currentOutput2 === targetOutput2,
   `current output: ${currentOutput2}, target output: ${targetOutput2}`
-);
