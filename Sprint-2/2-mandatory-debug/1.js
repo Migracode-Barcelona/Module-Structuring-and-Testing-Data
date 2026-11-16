@@ -1,9 +1,10 @@
 // Predict and explain first...
 //  =============> write your prediction here
+  // The sum of 10 and 32 will be undefined
 
 function sum(a, b) {
   return;
-  a + b;
+a + b;
 }
 
 console.log(`The sum of 10 and 32 is ${sum(10, 32)}`);
