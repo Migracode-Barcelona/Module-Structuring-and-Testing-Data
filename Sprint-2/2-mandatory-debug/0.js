@@ -10,6 +10,7 @@ function multiply(a, b) {
 console.log(`The result of multiplying 10 and 32 is ${multiply(10, 32)}`);
 
 // =============> write your explanation here
+  // The result of console.log is undefined since it does not return something, it will only print the result of evaluating an expression. 
 
 // Finally, correct the code to fix the problem
 //  =============> write your new code here
