@@ -6,9 +6,9 @@
 // =============> write your prediction of the error here
     //Invalid identifier
 
-function square(3) {
-    return num * num;
-}
+//function square(3) {
+   // return num * num;
+//}
 
 console.log(square(3));
 
@@ -22,3 +22,8 @@ console.log(square(3));
 
 // =============> write your new code here
 
+function square(num) {
+    return num * num;
+}
+
+console.log(square(3));
