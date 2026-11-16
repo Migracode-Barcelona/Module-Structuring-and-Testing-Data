@@ -17,4 +17,11 @@ console.log(decimalNumber);
 // =============> write your explanation here
 
 // Finally, correct the code to fix the problem
+// there are two variables with the same name a
+// and also we cannot log in decimalNumber that does not exist outside the function.
 // =============> write your new code here
+function convertToPercentage(decimalNumber) {
+  const percentage = `${decimalNumber * 100}%`;
+  return percentage;
+}
+console.log(convertToPercentage(0.5));
