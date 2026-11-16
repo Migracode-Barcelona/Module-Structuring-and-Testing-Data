@@ -1,5 +1,5 @@
 // Predict and explain first...
-//  =============> write your prediction here
+// The capitalise function takes a string as its input and returns a new string with the first letter capitalised. 
 
 // call the function capitalise with a string input
 // interpret the error message and figure out why an error is occurring
