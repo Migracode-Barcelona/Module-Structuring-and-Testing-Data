@@ -10,4 +10,8 @@ function capitalise(str) {
 }
 
 // =============> write your explanation here
+//the error is because the variable str is written twice.
+function capitalise(str) {
+  return `${str[0].toUpperCase()}${str.slice(1)}`;
+}
 // =============> write your new code here
