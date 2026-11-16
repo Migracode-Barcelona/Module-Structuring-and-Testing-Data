@@ -1,7 +1,7 @@
 // Predict and explain first...
 
 // Why will an error occur when this program runs?
-// =============> write your prediction here
+// 'decimalNumber' has been declared in line 8. An error will occur as its declared again in line 9. 
 
 // Try playing computer with the example to work out what is going on
 
