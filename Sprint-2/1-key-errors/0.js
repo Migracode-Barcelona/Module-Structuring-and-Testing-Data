@@ -10,4 +10,9 @@ function capitalise(str) {
 }
 
 // =============> write your explanation here
+  //str[0] provides the first letter of the string 
+  //.toUpperCase() converts all the letters or characters in a string to uppercase
+  //str.slice(1) extracts a section of the string starting at 1 and continuing to the end which returns the rest of the input. 
+  //return str; returns the result
+  
 // =============> write your new code here
