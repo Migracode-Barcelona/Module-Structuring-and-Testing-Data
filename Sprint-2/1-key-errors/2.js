@@ -4,6 +4,7 @@
 // this function should square any number but instead we're going to get an error
 
 // =============> write your prediction of the error here
+    //Invalid identifier
 
 function square(3) {
     return num * num;
@@ -16,5 +17,4 @@ function square(3) {
 // Finally, correct the code to fix the problem
 
 // =============> write your new code here
-
 
