@@ -16,6 +16,7 @@ console.log(square(3));
     // SyntaxError: Unexpected number
 
 // =============> explain this error message here
+    // The parameter is not valid. An identifier should be used. 
 
 // Finally, correct the code to fix the problem
 
