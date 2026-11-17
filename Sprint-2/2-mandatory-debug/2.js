@@ -39,3 +39,4 @@ console.log(`The last digit of 806 is ${getLastDigit(806)}`);
   // Now it's ok. 
 
 // Explain why getLastDigit is not working properly - correct the problem
+  //The function has no parameter. To fix it, added 'num' as a parameter to function getLastDigit(num).
