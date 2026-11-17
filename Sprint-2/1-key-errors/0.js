@@ -10,4 +10,9 @@ function capitalise(str) {
 }
 
 // =============> write your explanation here
+// Answer: An error would occur because str is already a parameter of a function. a function
+
 // =============> write your new code here
+function capitalise(str) {
+  return `${str[0].toUpperCase()}${str.slice(1)}`;
+}

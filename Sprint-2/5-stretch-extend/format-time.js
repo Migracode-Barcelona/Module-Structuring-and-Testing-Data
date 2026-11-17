@@ -23,3 +23,26 @@ console.assert(
   currentOutput2 === targetOutput2,
   `current output: ${currentOutput2}, target output: ${targetOutput2}`
 );
+
+//Answer:// The original function did not handle midnight (00:00) correctly.
+// It also treated midday (12:00) as am instead of pm.
+// Another problem was that it changed the minutes to 00 for afternoon times.
+// I added tests for these cases and corrected the function.
+
+function formatAs12HourClock(time) {
+  const hours = Number(time.slice(0, 2));
+
+  if (hours === 0) {
+    return `12${time.slice(2)} am`;
+  }
+
+  if (hours === 12) {
+    return `${time} pm`;
+  }
+
+  if (hours > 12) {
+    return `${hours - 12}${time.slice(2)} pm`;
+  }
+
+  return `${time} am`;
+}

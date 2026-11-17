@@ -1,8 +1,10 @@
 // Predict and explain first...
+//Answer: The last digits of 42,105, and 806 can not be printed out because of the global variale being declared.
 
 // Predict the output of the following code:
 // =============> Write your prediction here
-
+// Answer: The last digits of the three numbers would all be printed as 3, 
+// because the parameter is undefined and the global variable is what being used.
 const num = 103;
 
 function getLastDigit() {
@@ -22,3 +24,10 @@ console.log(`The last digit of 806 is ${getLastDigit(806)}`);
 
 // This program should tell the user the last digit of each number.
 // Explain why getLastDigit is not working properly - correct the problem
+function getLastDigit(num) {
+  return num.toString().slice(-1);
+}
+
+console.log(`The last digit of 42 is ${getLastDigit(42)}`);
+console.log(`The last digit of 105 is ${getLastDigit(105)}`);
+console.log(`The last digit of 806 is ${getLastDigit(806)}`);
