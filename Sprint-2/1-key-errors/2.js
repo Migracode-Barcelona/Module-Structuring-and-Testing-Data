@@ -5,6 +5,9 @@
 
 // =============> write your prediction of the error here
 
+//Answer: An error will occur because number can not be decleared as a parameter
+and also it is returning num, which has not been defined anywhere in the function.
+
 function square(3) {
     return num * num;
 }
@@ -17,4 +20,8 @@ function square(3) {
 
 // =============> write your new code here
 
+function square(num) {
+    return num * num;
+}
 
+console.log(square(3));
