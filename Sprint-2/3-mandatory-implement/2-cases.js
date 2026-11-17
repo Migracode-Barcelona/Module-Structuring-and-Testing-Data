@@ -14,3 +14,11 @@
 // You will need to come up with an appropriate name for the function
 // Use the MDN string documentation to help you find a solution
 // This might help https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase
+
+const upperSnakeCase = (str) => {
+  const makeUpperCase = str.trim().toUpperCase();
+  const result = makeUpperCase.replaceAll(/\s+/g, "_");
+  return result;
+};
+
+console.log(upperSnakeCase("  lords of   rigns    a"));
