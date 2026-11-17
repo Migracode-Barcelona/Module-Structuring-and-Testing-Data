@@ -1,20 +1,17 @@
+// Prediction:
+// SyntaxError will occur because we cannot use a number (3) as a function parameter.
 
-// Predict and explain first BEFORE you run any code...
+// Error message:
+// SyntaxError: Unexpected number
 
-// this function should square any number but instead we're going to get an error
+// Explanation:
+// Function parameters must be variable names, not actual values.
+// Also, num is not defined.
 
-// =============> write your prediction of the error here
+// New code:
 
-function square(3) {
-    return num * num;
+function square(num) {
+  return num * num;
 }
 
-// =============> write the error message here
-
-// =============> explain this error message here
-
-// Finally, correct the code to fix the problem
-
-// =============> write your new code here
-
-
+console.log(square(3)); // 9
