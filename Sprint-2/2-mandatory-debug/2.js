@@ -4,15 +4,15 @@
 // =============> Write your prediction here
   // The last digit will be 3. 
 
-const num = 103;
+// const num = 103;
 
-function getLastDigit() {
-  return num.toString().slice(-1);
-}
+//function getLastDigit() {
+  //return num.toString().slice(-1);
+//}
 
 //console.log(`The last digit of 42 is ${getLastDigit(42)}`);
 //console.log(`The last digit of 105 is ${getLastDigit(105)}`);
-console.log(`The last digit of 806 is ${getLastDigit(806)}`);
+//console.log(`The last digit of 806 is ${getLastDigit(806)}`);
 
 // Now run the code and compare the output to your prediction
 // =============> write the output here
@@ -27,5 +27,15 @@ console.log(`The last digit of 806 is ${getLastDigit(806)}`);
 // Finally, correct the code to fix the problem
 // =============> write your new code here
 
-// This program should tell the user the last digit of each number.
+function getLastDigit(num) {
+  return num.toString().slice(-1);
+}
+
+console.log(`The last digit of 42 is ${getLastDigit(42)}`);
+console.log(`The last digit of 105 is ${getLastDigit(105)}`);
+console.log(`The last digit of 806 is ${getLastDigit(806)}`);
+
+// This program should tell the user the last digit of each number.  
+  // Now it's ok. 
+
 // Explain why getLastDigit is not working properly - correct the problem
