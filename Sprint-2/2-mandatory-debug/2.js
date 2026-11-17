@@ -2,6 +2,7 @@
 
 // Predict the output of the following code:
 // =============> Write your prediction here
+  // The last digit will be 3. 
 
 const num = 103;
 
