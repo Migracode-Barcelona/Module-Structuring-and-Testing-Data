@@ -12,12 +12,13 @@ function getCardValue(card) {
     const rank = card.slice (0, -1)
     
   if (rank === "A") return 11;
-  if (rank === "5") return 5; 
   
   // face cards
-  if (rank === "J", "K", "Q", "10") return 10; 
+  if (rank === "J" || rank === "Q" || rank === "K" || rank === "10") return 10;
   
-
+  // number cards
+  const numericRank = Number(rank); 
+  if (numericRank >= 2 && numericRank <= 9) return numericRank;
 }
 
 // You need to write assertions for your function to check it works in different cases
