@@ -19,6 +19,10 @@ function getCardValue(card) {
   // number cards
   const numericRank = Number(rank); 
   if (numericRank >= 2 && numericRank <= 9) return numericRank;
+
+  // invalid card
+  throw new Error("Invalid card rank.");
+
 }
 
 // You need to write assertions for your function to check it works in different cases
@@ -66,8 +70,30 @@ assertEquals(aceofSpades, 11);
 // Given a card with a rank of "A",
 // When the function is called with an Ace,
 // Then it should, by default, assume the Ace is worth 11 points, which is a common rule in blackjack.
+  const aceOfClubs = getCardValue ("A♣");
+  assertEquals(aceOfClubs, 11);
 
 // Handle Invalid Cards:
 // Given a card with an invalid rank (neither a number nor a recognized face card),
 // When the function is called with such a card,
 // Then it should throw an error indicating "Invalid card rank."
+
+  try {
+  getCardValue("1♠");
+  console.assert(false, "Expected an error for invalid card");
+} catch (e) {
+  console.assert(
+    e.message === "Invalid card rank.",
+    `Unexpected error: ${e.message}`
+  );
+}
+
+  try {
+  getCardValue("Z♣");
+  console.assert(false, "Expected an error for invalid card");
+} catch (e) {
+  console.assert(
+    e.message === "Invalid card rank.",
+    `Unexpected error: ${e.message}`
+  );
+}
