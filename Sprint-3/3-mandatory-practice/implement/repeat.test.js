@@ -30,3 +30,14 @@ test("should repeat the string count times", () => {
 // Given a target string str and a negative integer count,
 // When the repeat function is called with these inputs,
 // Then it should throw an error or return an appropriate error message, as negative counts are not valid.
+test("should return the original string when count is 1", () => {
+  expect(repeat("hello", 1)).toEqual("hello");
+});
+
+test("should return an empty string when count is 0", () => {
+  expect(repeat("hello", 0)).toEqual("");
+});
+
+test("should throw an error when count is negative", () => {
+  expect(() => repeat("hello", -1)).toThrow("Count cannot be negative.");
+});
