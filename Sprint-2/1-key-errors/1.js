@@ -18,3 +18,5 @@ console.log(decimalNumber);
 
 // Finally, correct the code to fix the problem
 // =============> write your new code here
+
+console.log(convertToPercentage(decimalNumber));

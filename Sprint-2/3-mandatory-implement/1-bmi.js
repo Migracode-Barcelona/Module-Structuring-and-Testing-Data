@@ -17,3 +17,8 @@
 function calculateBMI(weight, height) {
     // return the BMI of someone based off their weight and height
 }
+
+return (weight / (height * height)).toFixed(1); // to get 1 decimal place, we can use toFixed(1) method https://www.w3schools.com/jsref/jsref_tofixed.asp
+}
+
+console.log(calculateBMI(70, 1.73)); // works

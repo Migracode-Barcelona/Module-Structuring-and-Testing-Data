@@ -18,3 +18,4 @@ function square(3) {
 // =============> write your new code here
 
 
+console.log(square(3));
