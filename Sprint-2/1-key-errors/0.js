@@ -13,6 +13,6 @@ function capitalise(str) {
   let main = `${str[0].toUpperCase()}${str.slice(1)}`;
   return main; 
 }
-console.log (capitalise("animal"))
+console.log (capitalise("hello"))
 
 
