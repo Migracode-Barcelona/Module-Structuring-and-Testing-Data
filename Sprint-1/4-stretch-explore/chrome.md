@@ -16,3 +16,11 @@ Now try invoking the function `prompt` with a string input of `"What is your nam
 
 What effect does calling the `prompt` function have?
 What is the return value of `prompt`?
+
+Answer
+1) Effect of `alert` function
+The new message box appears "the chrome page say "Hello Wordld with ok buttom" after typing `alert` function. Untill ok button isn't clicked, the screen is frooze.
+2) Effect of `prompt` function
+The new message box appears "the chrome page say "What is your name" with empty input taga and two buttons; "ok" and "cancle" after typing `prompt` function. Untill typing anything in empty input tag and click on "ok" or "cancle", the screen is frooze.
+3) Return value of `prompt`
+The return value of `prompt` is same as whatever you type in the empty input tag.
