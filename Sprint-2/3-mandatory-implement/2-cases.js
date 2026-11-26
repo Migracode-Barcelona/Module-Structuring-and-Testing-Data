@@ -24,3 +24,22 @@ console.log(toUpperSnakeCase("hello there"));
 console.log(toUpperSnakeCase("lord of the rings"));
 
 console.log(toUpperSnakeCase("welcome to javascript"));
+
+
+
+Challenge for you: Implement this function without using replaceAll. Hint: You will need to iterate over every char of the string.
+
+
+function toUpperSnakeCase(str) {
+    let result = "";
+
+    for (const character of str) {
+        result += character === " " ? "_" : character.toUpperCase();
+    }
+
+    return result;
+}
+
+console.log(toUpperSnakeCase("hello there"));
+console.log(toUpperSnakeCase("lord of the rings"));
+console.log(toUpperSnakeCase("welcome to javascript"));

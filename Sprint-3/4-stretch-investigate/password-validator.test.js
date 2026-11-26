@@ -24,3 +24,33 @@ test("password has at least 5 characters", () => {
     expect(result).toEqual(true);
 }
 );
+
+//Answer:
+
+const isValidPassword = require("./password-validator");
+
+test("password should be valid when it meets all requirements", () => {
+    const password = "Hello1!";
+    const result = isValidPassword(password);
+    expect(result).toEqual(true);
+});
+
+test("password should be invalid if it has fewer than 5 characters", () => {
+    expect(isValidPassword("Hi1!")).toEqual(false);
+});
+
+test("password should be invalid without an uppercase letter", () => {
+    expect(isValidPassword("hello1!")).toEqual(false);
+});
+
+test("password should be invalid without a lowercase letter", () => {
+    expect(isValidPassword("HELLO1!")).toEqual(false);
+});
+
+test("password should be invalid without a number", () => {
+    expect(isValidPassword("Hello!")).toEqual(false);
+});
+
+test("password should be invalid without a special character", () => {
+    expect(isValidPassword("Hello12")).toEqual(false);
+});
