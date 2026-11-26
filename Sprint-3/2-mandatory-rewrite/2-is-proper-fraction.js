@@ -4,3 +4,11 @@ function isProperFraction(numerator, denominator) {
 }
 
 module.exports = isProperFraction;
+
+//Answer:
+function isProperFraction(numerator, denominator) {
+    if (numerator < denominator) return true;
+    return false;
+}
+
+module.exports = isProperFraction;

@@ -23,3 +23,12 @@ console.log(find("code your future", "z"));
 // b) What is the if statement used to check
 // c) Why is index++ being used?
 // d) What is the condition index < str.length used for?
+
+//Answer:
+a) The index variable updates by incrementing by 1 each time the while loop iterates. It starts at 0 and increases until it reaches the length of the string.
+b) The if statement is used to check if the character at the current index of the string matches the character we are searching for.
+c) The index++ is being used to increment the index variable by 1 in each iteration of the while loop, allowing us to check each character in the string.
+d) The condition index < str.length is used to ensure that we do not access an index that is out of bounds for the string.
+
+
+

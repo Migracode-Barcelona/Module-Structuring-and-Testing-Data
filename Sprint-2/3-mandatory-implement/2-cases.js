@@ -14,3 +14,32 @@
 // You will need to come up with an appropriate name for the function
 // Use the MDN string documentation to help you find a solution
 // This might help https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase
+
+function toUpperSnakeCase(str) {
+    return str.toUpperCase().replaceAll(" ", "_");
+}
+
+console.log(toUpperSnakeCase("hello there"));
+
+console.log(toUpperSnakeCase("lord of the rings"));
+
+console.log(toUpperSnakeCase("welcome to javascript"));
+
+
+
+Challenge for you: Implement this function without using replaceAll. Hint: You will need to iterate over every char of the string.
+
+
+function toUpperSnakeCase(str) {
+    let result = "";
+
+    for (const character of str) {
+        result += character === " " ? "_" : character.toUpperCase();
+    }
+
+    return result;
+}
+
+console.log(toUpperSnakeCase("hello there"));
+console.log(toUpperSnakeCase("lord of the rings"));
+console.log(toUpperSnakeCase("welcome to javascript"));

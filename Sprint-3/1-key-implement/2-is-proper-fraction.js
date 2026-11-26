@@ -51,3 +51,31 @@ const equalFraction = isProperFraction(3, 3);
 
 // Stretch:
 // What other scenarios could you test for?
+
+//Answer:
+function isProperFraction(numerator, denominator) {
+  if (numerator < denominator) return true;
+}
+
+function assertEquals(actualOutput, targetOutput) {
+  console.assert(
+    actualOutput === targetOutput,
+    `Expected ${actualOutput} to equal ${targetOutput}`
+  );
+}
+
+// Proper Fraction check
+const properFraction = isProperFraction(2, 3);
+assertEquals(properFraction, true);
+
+// Improper Fraction check
+const improperFraction = isProperFraction(5, 2);
+assertEquals(improperFraction, false);
+
+// Negative Fraction check
+const negativeFraction = isProperFraction(-4, 7);
+assertEquals(negativeFraction, true);
+
+// Equal Numerator and Denominator check
+const equalFraction = isProperFraction(3, 3);
+assertEquals(equalFraction, false);

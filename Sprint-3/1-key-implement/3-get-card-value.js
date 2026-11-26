@@ -49,3 +49,63 @@ const fiveofHearts = getCardValue("5♥");
 // Given a card with an invalid rank (neither a number nor a recognized face card),
 // When the function is called with such a card,
 // Then it should throw an error indicating "Invalid card rank."
+
+//Answer:
+
+function getCardValue(card) {
+  const rank = card.slice(0, -1);
+
+  // Handle Ace
+  if (rank === "A") return 11;
+
+  // Handle number cards (2-9)
+  if (rank >= "2" && rank <= "9") return Number(rank);
+
+  // Handle 10 and face cards
+  if (rank === "10" || rank === "J" || rank === "Q" || rank === "K") {
+    return 10;
+  }
+
+  // Handle invalid cards
+  throw new Error("Invalid card rank.");
+}
+
+
+function assertEquals(actualOutput, targetOutput) {
+  console.assert(
+    actualOutput === targetOutput,
+    `Expected ${actualOutput} to equal ${targetOutput}`
+  );
+}
+
+// Case 1: Ace
+const aceofSpades = getCardValue("A♠");
+assertEquals(aceofSpades, 11);
+
+// Case 2: Number cards
+const fiveofHearts = getCardValue("5♥");
+assertEquals(fiveofHearts, 5);
+
+// Case 3: Face cards
+const kingOfSpades = getCardValue("K♠");
+assertEquals(kingOfSpades, 10);
+
+const queenOfHearts = getCardValue("Q♥");
+assertEquals(queenOfHearts, 10);
+
+const jackOfClubs = getCardValue("J♣");
+assertEquals(jackOfClubs, 10);
+
+const tenOfDiamonds = getCardValue("10♦");
+assertEquals(tenOfDiamonds, 10);
+
+// Case 4: Ace
+const aceOfHearts = getCardValue("A♥");
+assertEquals(aceOfHearts, 11);
+
+// Case 5: Invalid cards
+try {
+  getCardValue("X♠");
+} catch (error) {
+  console.assert(error.message === "Invalid card rank.");
+}
