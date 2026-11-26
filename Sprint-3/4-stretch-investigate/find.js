@@ -1,25 +1,26 @@
 function find(str, char) {
   let index = 0;
 
+  // Continue searching while index is within the string length.
   while (index < str.length) {
+    // Check whether the current character matches the target character.
     if (str[index] === char) {
       return index;
     }
+
+    // Move to the next character.
     index++;
   }
+
+  // Return -1 if the character is not found.
   return -1;
 }
 
-console.log(find("code your future", "u"));
-console.log(find("code your future", "z"));
+// Original examples
+console.log(find("code your future", "u")); // 7
+console.log(find("code your future", "z")); // -1
 
-// The while loop statement allows us to do iteration - the repetition of a certain number of tasks according to some condition
-// See the docs https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while
-
-// Use the Python Visualiser to help you play computer with this example and observe how this code is executed
-// Pay particular attention to the following:
-
-// a) How the index variable updates during the call to find
-// b) What is the if statement used to check
-// c) Why is index++ being used?
-// d) What is the condition index < str.length used for?
+// Additional practice examples
+console.log(find("javascript", "a")); // 1
+console.log(find("javascript", "s")); // 4
+console.log(find("javascript", "x")); // -1
