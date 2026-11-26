@@ -72,4 +72,3 @@ c) % means the reminder. The expression movieLength % 60 represents the reminder
 d) const totalMinutes = (movieLength - remainingSeconds) / 60; so totalMintues = (8784 - 24) / 60 = 146
 
 e) The variable result represents the total time of movielenght in  format like hr:min:sec. It should be given the name "totalMoveLength".
-
